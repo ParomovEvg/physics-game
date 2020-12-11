@@ -1,0 +1,32 @@
+.Well {
+  width: 100px;
+  height: 300px;
+  position: relative;
+  border: 6px solid burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &__stick {
+    position: absolute;
+    width: 101%;
+    height: 3px;
+    background-color: burlywood;
+    &:nth-child(1) {
+      transform: rotate(60deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(120deg);
+    }
+    &:nth-child(3) {
+      transform: rotate(180deg);
+    }
+    &:nth-child(4) {
+      transform: rotate(240deg);
+    }
+    &:nth-child(5) {
+      transform: rotate(300deg);
+    }
+  }
+}
